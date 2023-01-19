@@ -32,7 +32,8 @@ namespace Mission2Assignment
             // calculate percentages of total rolls to determine number of asterisks to print and prints them
             for (int i = 0; i < 11; i++)
             {
-                percRolled[i] = rollTotals[i] * 100 / iNumRolls;
+                decimal decRollTotals = rollTotals[i];
+                percRolled[i] = decRollTotals * 100 / iNumRolls;
                 decimal numPercent = percRolled[i];
                 string starSpangledString = "";
                 // Make a string full of asterisks
